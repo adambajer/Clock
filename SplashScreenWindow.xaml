@@ -1,0 +1,16 @@
+﻿<Window x:Class="Clock.SplashScreenWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Loading..." 
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"  WindowState="Maximized" Icon="/splash.ico" >
+    <Grid Height="1080" Width="1920">
+
+
+        <Image HorizontalAlignment="Left" Height="542" VerticalAlignment="Center" Width="554" Source="/splash.jpg" Margin="689,0,0,0">
+            <Image.Effect>
+                <DropShadowEffect BlurRadius="300" ShadowDepth="0" Color="Black" RenderingBias="Quality"/>
+            </Image.Effect>
+        </Image>
+
+    </Grid>
+</Window>

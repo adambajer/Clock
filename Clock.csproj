@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <PackageIcon>splash.jpg</PackageIcon>
+    <ApplicationIcon>Graphicloads-100-Flat-Clock.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="closebut.png" />
+    <None Remove="favicon.png" />
+    <None Remove="Miele_Logo_M_Red_sRGB.png" />
+    <None Remove="minimize.png" />
+    <None Remove="minimize_hover.png" />
+    <None Remove="splash.jpg" />
+    <None Remove="winbut.png" />
+    <None Remove="winbut_hover.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Graphicloads-100-Flat-Clock.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="closebut.png" />
+    <Resource Include="minimize.png" />
+    <Resource Include="minimize_hover.png" />
+    <Resource Include="splash.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Desktop\splash.jpg">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+    <PackageReference Include="Hardcodet.Wpf.TaskbarNotification" Version="1.0.5" />
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="WindowsInput" Version="6.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="favicon.png" />
+    <Resource Include="Miele_Logo_M_Red_sRGB.png" />
+    <Resource Include="splash.jpg" />
+    <Resource Include="winbut.png" />
+    <Resource Include="winbut_hover.png" />
+  </ItemGroup>
+
+</Project>
